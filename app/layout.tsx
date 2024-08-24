@@ -30,10 +30,10 @@ export default function RootLayout({
           " select-none min-w-full min-h-full bg-slate-200 dark:bg-slate-950 text-slate-900 dark:text-slate-400"
         }
       >
-        <header className="h-12 backdrop-blur-lg bg-slate-300 dark:bg-slate-900 bg-opacity-50 dark:bg-opacity-30 sticky top-0 px-4 flex items-center border-b-2 border-opacity-20 border-slate-400 z-10">
-          <span className="text-2xl text-orange-400 font-bold">Star Blog</span>
+        <header className="absolute">
+          <span>Star Blog</span>
         </header>
-        <main className="mx-auto container py-4 px-1">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
